@@ -1,0 +1,20 @@
+{
+  "name": "hardhat-project",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@openzeppelin/hardhat-upgrades": "^1.9.0",
+    "@types/node": "^16.4.3",
+    "ethers": "^5.4.2",
+    "hardhat": "^2.5.0",
+    "ts-node": "^10.1.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.2.0",
+    "@openzeppelin/contracts-upgradeable": "^4.2.0"
+  },
+  "scripts": {
+    "build": "npx hardhat compile",
+    "deploy": "ts-node ./scripts/deploy.ts"
+  }
+}
